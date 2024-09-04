@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="sendNotification"
+        android:text="发送通知" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="cancelNotification"
+        android:text="取消通知" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:logo="@mipmap/ic_launcher"
+        app:navigationIcon="@drawable/ic_launcher_foreground"
+        app:subtitle="子标题"
+        app:subtitleTextColor="#00ffff"
+        app:title="标题"
+        app:titleTextColor="#ff0000" />
+
+    <Button
+        android:id="@+id/btn_alert"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="alertDialog"
+        android:text="显示警告" />
+
+    <Button
+        android:id="@+id/btn_popup"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="popupWindows"
+        android:text="显示popup" />
+
+
+</LinearLayout>

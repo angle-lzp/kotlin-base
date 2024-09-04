@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.study.StudyFragment">
+
+    <!--    第一栏：学习，课表-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tab_study"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="学习"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tab_stable"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="课表"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btn_sign"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_signin" />
+    </LinearLayout>
+
+    <!--    第二栏：收藏等-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/item_collect"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="收藏"
+                android:textColor="#808080"
+                android:textSize="10dp"
+                app:backgroundTint="@color/white"
+                app:icon="@drawable/icon_collect"
+                app:iconGravity="top"
+                app:iconPadding="-3dp"
+                app:iconSize="15dp"
+                app:iconTint="#CC338F" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/item_question"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="问答"
+                android:textColor="#808080"
+                android:textSize="10dp"
+                app:backgroundTint="@color/white"
+                app:icon="@drawable/icon_answer"
+                app:iconGravity="top"
+                app:iconPadding="-3dp"
+                app:iconSize="15dp"
+                app:iconTint="#CC338F" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/item_mark"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="笔记"
+                android:textColor="#808080"
+                android:textSize="10dp"
+                app:backgroundTint="@color/white"
+                app:icon="@drawable/icon_note"
+                app:iconGravity="top"
+                app:iconPadding="-3dp"
+                app:iconSize="15dp"
+                app:iconTint="#CC338F" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/item_handlenote"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="手记"
+                android:textColor="#808080"
+                android:textSize="10dp"
+                app:backgroundTint="@color/white"
+                app:icon="@drawable/icon_handnote"
+                app:iconGravity="top"
+                app:iconPadding="-3dp"
+                app:iconSize="15dp"
+                app:iconTint="#CC338F" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/item_download"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="下载"
+                android:textColor="#808080"
+                android:textSize="10dp"
+                app:backgroundTint="@color/white"
+                app:icon="@drawable/icon_download"
+                app:iconGravity="top"
+                app:iconPadding="-3dp"
+                app:iconSize="15dp"
+                app:iconTint="#CC338F" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!--    第三栏：我的课程-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tab_my_study"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的课程"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tab_my_special"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="我的专栏"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/item_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="新增"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/item_update"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="更新"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+    <!--    第四栏：我的课程下面的内容-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp" />
+
+</LinearLayout>
