@@ -25,7 +25,7 @@ class FragmentActivity : AppCompatActivity() {
         fragment.arguments = bundle
         var ft = supportFragmentManager.beginTransaction()
         /**
-        //没有添加的时候添加进入
+        //没有添加的时候添加进入(查看fragment是否被添加上容器中)
         if(!fragment.isAdded){
         ft.add(R.id.container,fragment)
         }

@@ -143,7 +143,7 @@
             </intent-filter>
         </receiver>-->
 
-        <!--        自定义注册需要在这里什么定义的action-->
+        <!--        自定义注册需要在这里定义的action,在代码中会使用到这个action-->
         <receiver
             android:name=".ui.receiver.TestBroadcastReceiver"
             android:exported="true">

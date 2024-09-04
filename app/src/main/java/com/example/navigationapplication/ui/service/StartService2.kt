@@ -90,7 +90,7 @@ class StartService2 : Service() {
         Log.e("StartService2", "onDestroy")
     }
 
-    //重写绑定
+    //重新绑定
     override fun onRebind(intent: Intent?) {
         super.onRebind(intent)
         Log.e("StartService2", "onRebind")
