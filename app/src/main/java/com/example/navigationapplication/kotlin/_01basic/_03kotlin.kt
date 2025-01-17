@@ -18,6 +18,10 @@ fun main() {
 
 fun returnFunction(userName: String, password: String): (Int) -> String {
     println("userName is $userName,password is $password")
+
+    //fun a(itt:Int) = {"当前返回的账号、密码、code is $userName,$password,$itt"}
+
+    //这种只有函数体的类型也是一个函数，如上a(itt:Int)
     return {
         "当前返回的账号、密码、code is $userName,$password,$it"
     }
@@ -25,7 +29,7 @@ fun returnFunction(userName: String, password: String): (Int) -> String {
 
 fun returnFunction2(userName: String, password: String): (Int) -> String {
     println("userName is $userName,password is $password")
-    return ::method01
+    return ::method01   //返回的是一个函数引用
 }
 
 fun method01(code: Int): String {

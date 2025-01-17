@@ -8,6 +8,7 @@ package com.example.navigationapplication.kotlin._04kotlinInterface
 //todo vararg关键字（多参数的传递）
 
 //objects:现在是一个临时的输入类型，现在不能用，需要在下面重写赋值才可以用
+//vararg objects: T -> 多数据参数，这个T可以是任何的数据类型，如果是Any类型，那么什么数据类型都可以，如下main方法中
 class _55kotlin<T>(vararg objects: T, var isMap: Boolean) {
 
     //在这里重新赋值
@@ -29,7 +30,7 @@ class _55kotlin<T>(vararg objects: T, var isMap: Boolean) {
 }
 
 fun main() {
-    //由于使用了 太多的类型组合，下面p1的类型应该更改是：_55kotlin<Comparable<*> & java.io.Serializable}>
+    //由于使用了 太多的不同类型组合，下面p1的类型应该更改为：_55kotlin<Comparable<*> & java.io.Serializable}>
     //但是上面是不允许这样写的，可以使用基类Any _55kotlin<Any>
     //1.
     val p1 = _55kotlin("angelo", 23, true, 20.3f, 34.456, null, 'c', isMap = true);

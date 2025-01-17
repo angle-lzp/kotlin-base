@@ -31,7 +31,7 @@ private fun funErgodic() {
     }
 
     println()
-    //方式三：
+    //方式三：（下面匿名函数的数据类型可写可不写）
     list.forEachIndexed { index: Int, item: Int -> print("下标：$index 元素：$item; ") }
 }
 
@@ -49,7 +49,6 @@ private fun funList(): Unit {
     println(list[1])
     println(list[2])
     //println(list[3])
-
 
     //todo 推荐实用下面的方式，可以避免空指针异常
     val list1: List<String> = listOf("angelo", "steven", "tom", "andrew")//todo 这样创建的是不可变的

@@ -5,7 +5,7 @@ package com.example.navigationapplication.kotlin._04kotlinInterface
  * date : 01/02/2024 8:53 AM
  * description:
  */
-//todo 集合类的变换函数-map
+//todo 集合类的变换函数-map（就是转换，和Java中Stream中的map方法一致）
 fun main() {
 
     //T T T --> 新的集合(R,R,R)

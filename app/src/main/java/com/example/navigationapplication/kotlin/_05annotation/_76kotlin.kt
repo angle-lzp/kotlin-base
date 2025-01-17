@@ -8,10 +8,10 @@ package com.example.navigationapplication.kotlin._05annotation
 
 //todo 注解：@JvmField
 class Person {
-    //使用该注解在Java代码中可以直接中通过变量名调用.names
+    //使用该注解在Java代码中可以直接调用过变量名，例如：new Person().names
     @JvmField
     val names = listOf("angelo", "javan", "steven")
 
-    //反之：.getDatas()
+    //反之：new Person().getDatas()
     val datas = listOf(1, 2, 3)
 }

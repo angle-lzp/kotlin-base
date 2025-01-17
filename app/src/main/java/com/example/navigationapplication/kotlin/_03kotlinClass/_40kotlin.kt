@@ -9,7 +9,7 @@ package com.example.navigationapplication.kotlin._03kotlinClass
 // todo 对象表达式
 fun main() {
 
-    //匿名的对象表达式(直接实现接口；和Java中的你们对象一致，使用lambda表达式一样)
+    //匿名的对象表达式(直接实现接口；和Java中的匿名对象一致，使用lambda表达式一样)
     val flight = object : Flight() {
         override fun fly(name: String) {
             println("sub name is $name")

@@ -32,3 +32,7 @@ class Other {
 
     }
 }
+
+fun main(){
+    Other.name
+}

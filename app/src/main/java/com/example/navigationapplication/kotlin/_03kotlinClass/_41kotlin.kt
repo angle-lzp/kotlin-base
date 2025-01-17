@@ -15,6 +15,7 @@ package com.example.navigationapplication.kotlin._03kotlinClass
  */
 fun main() {
     //背后的代码 System.out.println(CompaniesClass.Companion.getName())
+    //CompaniesClass.Companion.getName()：可以理解为Companion是CompanionClass中的内部静态类（由object修饰的类（单例的就可以通过类名来直接调用函数或者属性））
     println(CompaniesClass.name)
     CompaniesClass.fun01()
 }

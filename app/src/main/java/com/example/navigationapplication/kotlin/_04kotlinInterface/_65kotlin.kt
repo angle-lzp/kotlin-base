@@ -16,6 +16,8 @@ fun main() {
 
     val list: List<String> = listOf("making", "lili", "join")
 
+    //重命名由上面的import进行决定
+
     println(set.rv())
     println(list.rv())
 

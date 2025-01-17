@@ -8,7 +8,8 @@ package com.example.navigationapplication.kotlin._02kotlinConstructor
 
 // todo 主构造器初始化，主次构造器执行顺序
 fun main() {
-    _31kotlin("angelo", 24)//次构造器
+    val o = _31kotlin("angelo", 24)//次构造器
+    o.show()
     _31kotlin("", "I need your approval")
 }
 
@@ -22,7 +23,7 @@ class _31kotlin(name: String, var info: String) {
     //这里是主构造器初始化的代码
     //todo 第三步
     init {
-        println("name is ${name}")
+        println("init name is ${name} info is ${info}")
         //如果括号里面是false：那么执行匿名函数里面的逻辑；true：无任何操作（false:执行{}里面的操作）
         require(name.isNotBlank()) {
             //（）里面的值为false抛出异常
@@ -33,6 +34,7 @@ class _31kotlin(name: String, var info: String) {
     //此构造器（必须继承主构造器；目的：为了主构造器统一管理，为了更好的初始化设备）
     //todo 第四步
     constructor(name: String = "李元霸", age: Int = 23) : this(name, "thanks") {
+        //次构造器中的变量只是属于次构造器的局部变量，不能当作类的成员变量，所以在次构造器的外部无法发使用
         println("name = [${name}], age = [${age}]")
     }
 
@@ -41,7 +43,12 @@ class _31kotlin(name: String, var info: String) {
         age: Int = 34,
         info: String = "i have applied for the installing of some software"
     ) : this(name, "approval") {
+        //次构造器中的变量只是属于次构造器的局部变量，不能当作类的成员变量，所以在次构造器的外部无法发使用
         println("name = [${name}], age = [${age}], info = [${info}]")
+    }
+
+    fun show(){
+        println("show nameUser = [${nameUser}], info = [${info}]")
     }
 }
 

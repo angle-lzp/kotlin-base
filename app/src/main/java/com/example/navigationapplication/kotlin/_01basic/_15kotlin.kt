@@ -9,6 +9,12 @@ package com.example.navigationapplication.kotlin._01basic
 //todo kotlin的内置转换函数let
 fun main() {
 
+    /**
+     * apply/also：返回类型都是this
+     * let/run：返回类型都最后一行相关
+     * with：返回类型和最后一行相关，匿名函数是this
+     */
+
     //let:取值的处理
     var num = listOf<Int>(5, 2, 3, 56, 3, 3).let {
         it.first() + it.last()

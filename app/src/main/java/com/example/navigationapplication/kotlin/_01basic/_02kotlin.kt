@@ -8,6 +8,7 @@ package com.example.navigationapplication.kotlin._01basic
 
 //todo 函数类型的引用（将一个普通函数变成一个函数类型的对象（函数引用））
 fun main() {
+    //不使用::methodReference的方式的话可以自己去实现一个这个函数类型的函数
     login22("angelo", "123456", ::methodReference)
 }
 

@@ -5,7 +5,7 @@ package com.example.navigationapplication.kotlin._04kotlinInterface
  * date : 01/02/2024 8:53 AM
  * description:
  */
-//todo reified
+//todo reified（具体化）
 
 data class Object01(val name: String, val age: Int, val info: String)
 data class Object02(val name: String, val age: Int, val info: String)
@@ -13,7 +13,7 @@ data class Object03(val name: String, val age: Int, val info: String)
 
 class _58kotlin {
     //将所有的功能都写在函数上
-    //<reified T>这中方式是用在方法上面的，Java是：<T>是一样的
+    //<reified T>这种方式是用在方法上面的，Java是：<T>是一样的
     inline fun <reified T> randomDefault(defaultLambdaAction: () -> T): T {
         val objList: List<Any> = listOf(
             Object01("obj01 angelo", 22, "obj01"),

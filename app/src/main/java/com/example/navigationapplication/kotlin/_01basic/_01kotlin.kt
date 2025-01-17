@@ -17,6 +17,7 @@ fun main() {
     }
     println(count)
 
+    //定义函数fun01，类型：(Int,Int,Int) -> String
     val fun01: (Int, Int, Int) -> String = { num1, num2, num3 ->
         "num1=${num1},num2=${num2},num3=${num3}"
     }
@@ -42,6 +43,7 @@ fun main() {
     println(avg(12, "Str"))
 
     //todo 函数中的函数
+    //{ _: String, _: Int -> "angelo" } 相当于自己临时创建一个函数（可和_02kotlin.kt进行对比）
     login("angelo", "123456") { _: String, _: Int ->
         "angelo"
     }

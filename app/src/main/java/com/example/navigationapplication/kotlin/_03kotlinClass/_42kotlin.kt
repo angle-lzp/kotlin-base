@@ -36,10 +36,10 @@ class InnerClass(_name: String) {
     }
 
     fun fun02() {
-        //外部类访问内部类方法
+        //外部类访问内部类方法（内部毕竟也是类也是需要创建对象来调用函数和属性）
         InnerClass01().funInner01()
 
-        //外部类访问内部类变量
+        //外部类访问内部类变量（内部毕竟也是类也是需要创建对象来调用函数和属性）
         println(InnerClass01().innerName)
     }
 }

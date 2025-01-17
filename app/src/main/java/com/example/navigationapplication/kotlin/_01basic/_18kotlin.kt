@@ -9,6 +9,12 @@ package com.example.navigationapplication.kotlin._01basic
 //todo kotlin的内转换函数also
 fun main() {
 
+    /**
+     * apply/also：返回类型都是this
+     * let/run：返回类型和最后一行相关
+     * with：返回类型和最后一行相关，匿名函数是this
+     */
+
     val str1 : String = "angelo"
     //默认的形参变量名称是it（apply是this），返回的类型全都是str1，本身
     //_14kotlin.kt

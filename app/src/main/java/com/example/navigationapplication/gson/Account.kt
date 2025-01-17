@@ -12,7 +12,7 @@ import com.google.gson.reflect.TypeToken
 fun main() {
     val gson = Gson()
     //json->对象
-    val jsonStr01 = "{\"nameUser\":\"angelo\",\"password\":\"123456\",\"age\":23}"
+    val jsonStr01 = "{\"nameUser\":\"angelo\",\"password\":\"123456\",\"age\":23,\"other\":100}"
     var fromJson01 = gson.fromJson(jsonStr01, Account::class.java)
     println("01-json->对象：$fromJson01")
 

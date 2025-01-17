@@ -67,12 +67,12 @@ private fun funNotVariableMap(): Unit {
         println("key:${it.key},value:${it.value}")
     }
 
-    //方式二：
+    //方式二：(匿名函数这里加不加数据类型都可以的，毕竟不是定义函数)
     map.forEach { key: String, value: Int ->
         println("key:$key,value:$value")
     }
 
-    //方式三：
+    //方式三：（同上）
     map.forEach { (key, value) ->
         println("key:$key,value:$value")
     }

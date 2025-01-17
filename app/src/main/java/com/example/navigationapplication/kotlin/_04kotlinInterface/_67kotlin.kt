@@ -43,7 +43,17 @@ class Context {
  * 输出：始终返回context本身，所以方便使用链式编程
  * 然后main函数里边可以根据DSL编程方式标准规则来写具体的实现，这就是DSL编程规范
  */
-//Context.(String)：this是Context，it是String(就是info的信息)
+//Context.(String)：this是Context，it是String(就是info的信息)（相当于给Context扩展了一个方法：(data : String) -> Unit）只有Context类型才可以调用
+/**
+ * private inline fun <E> E.myApply(lambda: E.() -> Unit): E {//函数里面是this
+ *     lambda()
+ *     return this
+ * }
+ * apply2相对于myApply来说就是将泛型E进行具体的类型化，给他一个具体的数据类型来表示
+ *
+ */
+
+
 fun Context.apply2(myApply: Context.(String) -> Unit): Context {
     myApply(info)
     return this

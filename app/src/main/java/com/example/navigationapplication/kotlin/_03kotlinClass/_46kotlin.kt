@@ -9,7 +9,7 @@ package com.example.navigationapplication.kotlin._03kotlinClass
 //todo 枚举（枚举里边也可以写函数）
 fun main() {
 
-    println(Week.星期一.ordinal) //ordinal:顺序 0
+    println(Week.星期一.ordinal) //ordinal:顺序数 0
     println(Week.星期三)
 
     //todo 重点：枚举的值等于枚举本身
@@ -41,8 +41,17 @@ enum class LimbsInfoEnum(var limbsInfo: LimbsInfo) {
     LEFT_FOOT(LimbsInfo("右手", 50)),
     RIGHT_FOOT(LimbsInfo("右手", 50));
 
-    //给出一个方法展示数据(以后需要取出数据的话，可以根据这样的来写)
+    //给出一个方法展示数据(以后需要取出数据的话，可以根据这样的来写)（匿名函数的写法，如果只有一条返回值语句，加入{}最后一行是什么就是什么）
     fun show() = "limbsInfo is ${this.limbsInfo.info},length is ${this.limbsInfo.length}"
+
+    //同上show
+    /*fun show02() = {
+
+        var a = 10
+        var b = 32
+        a + b
+        "limbsInfo is ${this.limbsInfo.info},length is ${this.limbsInfo.length}"
+    }*/
 
     //给出修改数据的方法
     fun updateDate(limbsInfo: LimbsInfo) {

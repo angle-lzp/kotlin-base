@@ -11,6 +11,12 @@ import java.io.File
 //todo kotlin的内置高级函数apply
 fun main() {
 
+    /**
+     * apply/also：返回类型都是this
+     * let/run：返回类型都最后一行相关
+     * with：返回类型和最后一行相关，匿名函数是this
+     */
+
     val str1: String = "angelo"
     println(str1.length)
     println(str1[str1.length - 1])

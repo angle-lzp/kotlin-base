@@ -34,6 +34,8 @@ fun main() {
 
 
     SingletonLazyClass02.instance.show()
+
+    SingletonLazyClass.getInstanceObj()
 }
 
 //1.饿汉式：加上object就是一个实打实的单例
